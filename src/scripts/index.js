@@ -5,7 +5,7 @@ import App from './views/app';
 console.log('bundler jalan h3h3');
 
 const app = new App({
-  content: document.querySelector('#mainContent'),
+  content: document.querySelector('body'),
 });
 
 window.addEventListener('hashchange', () => {
