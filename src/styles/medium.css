@@ -1,0 +1,16 @@
+@media screen and (min-width: 480px) {
+  .product .service-items {
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+  }
+
+  .service-item p {
+    padding-left: 40px;
+    padding-right: 30px;
+    text-align: left;
+  }
+
+  .service-item button {
+    margin-left: 40px;
+  }
+}

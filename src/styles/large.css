@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    height: 38vh;
+    background-size: 35% 180px;
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .jumbotron h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .jumbotron p {
+    margin-right: 410px;
+  }
+
+  .product {
+    padding-top: 70px;
+  }
+
+  .product .service-items {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    justify-content: space-around;
+  }
+
+  .service-item h3 {
+    text-align: center;
+    width: 90%;
+  }
+
+  .service-item p {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+}
