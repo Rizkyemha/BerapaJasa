@@ -7,20 +7,20 @@ class SignupCreator extends HTMLElement {
     // eslint-disable-next-line no-return-assign
     return this.innerHTML = `
     <a href="#/dashboard">back-button</a>
-    <div>
-        <h3>Sign Up</h3>
-        <div>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="password">
-            <div>
-              <label>
-                <input type="checkbox" name="fruit" value="Laki-laki">
+    <div class="signup-section__container">
+        <h3 class="signup-section__title">Sign Up</h3>
+        <div class="signup-section__input-container">
+            <input type="text" class="input__name">
+            <input type="text" class="input__name">
+            <input type="text" class="input__email">
+            <input type="password" class="input__password">
+            <div class="container-gender">
+              <label class="item-gender">
+                <input type="checkbox" value="Laki-laki">
                 <span>Laki-laki</span>
               </label>
               <label>
-                <input type="checkbox" name="fruit" value="Perempuan">
+                <input type="checkbox" value="Perempuan">
                 <span>Perempuan</span>
               </label>
             </div>
