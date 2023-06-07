@@ -5,40 +5,42 @@ class ProductAboutUs extends HTMLElement {
   }
 
   render() {
-    return this.innerHTML = `
+    return (this.innerHTML = `
+        <div class = "team-isi">
           <h3 class="team__title">Our Team</h3>
           <p class="team__slogan">Alone you are great, but together you’ll be stronger”</p>
           <team-items class="team__items">
-                <team-item class="team__item">
-                    <p class="team__item__img">ini gambar</p>
+                <article class="team__item">
+                    <div class="team__item__img-rizky"></div>
                     <div class="team__item__info">
-                        <h4 class="team__item__info__name">M. Risky Mahendra</h4>
-                        <p  class="team__item__info__role">Front-End || PM</p>
+                        <h4 class="team__item__info__name">M. Rizky Mahendra</h4>
+                        <p  class="team__item__info__role">Back-End || PM</p>
                     </div>
-                </team-item>
-                <team-item>
-                    <p class="team__item__img">ini gambar</p>
+                </article>
+                <article class="team__item">
+                    <div class="team__item__img-fadiya"></div>
                     <div class="team__item__info">
                         <h4 class="team__item__info__name">Fadiya Qurotun N</h4>
                         <p  class="team__item__info__role">Front-End</p>
                     </div>
-                </team-item>
-                    <team-item>
-                    <p class="team__item__img">ini gambar</p>
+                </article>
+                <article class="team__item">
+                    <div class="team__item__img-wisnu"></div>
                     <div class="team__item__info">
-                        <h4 class="team__item__info__name">Wisnu Arizky P</h4>
-                        <p  class="team__item__info__role">Back-End</p>
+                        <h4 class="team__item__info__name">Wisnu Arizky k</h4>
+                        <p  class="team__item__info__role">Front-End</p>
                     </div>
-                </team-item>
-                <team-item>
-                    <p class="team__item__img">ini gambar</p>
+                </article>
+                <article class="team__item">
+                    <div class="team__item__img-ivana"></div>
                     <div class="team__item__info">
                         <h4 class="team__item__info__name">Ivana Hayyu</h4>
-                        <p  class="team__item__info__role">Back-End || UI / UX Desainer</p>
+                        <p  class="team__item__info__role">UI / UX Desainer</p>
                     </div>
-                </team-item>
+                </article>
           </team-items>
-          `;
+        </div>
+          `);
   }
 }
 

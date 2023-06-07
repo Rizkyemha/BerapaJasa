@@ -2,12 +2,12 @@ const HEADER = {
   render() {
     return `
     <header class="app-bar">
-        <div class="app-bar__menu">
-            <button id="hamburgerButton">☰</button>
-        </div>
-        <div class="app-bar__brand">
-            <h1>BerapaJasa</h1>
-        </div>
+      <div class="app-bar__brand">
+        <h1>Berapa Jasa</h1>
+      </div>
+      <div class="app-bar__menu">
+          <button id="hamburgerButton">☰</button>
+      </div>
         <nav id="navigationDrawer" class="app-bar__navigation">
             <ul>
               <li><a href="#/">Home</a></li>
