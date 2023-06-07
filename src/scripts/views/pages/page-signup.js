@@ -1,4 +1,4 @@
-import '../components/signup';
+import '../components/login/signup';
 
 const SIGNUP = {
   async render() {

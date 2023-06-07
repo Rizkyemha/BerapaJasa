@@ -1,7 +1,7 @@
 import Main from '../components/main-content';
-import '../components/profile-side-bar';
-import '../components/profile-header';
-import '../components/profile-content';
+import '../components/profile/profile-side-bar';
+import '../components/profile/profile-header';
+import '../components/profile/profile-content';
 
 const PROFILE = {
   async render() {
