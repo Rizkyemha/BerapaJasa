@@ -1,43 +1,37 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: white;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-html,
-body {
-  overflow-x: hidden;
 }
 
 /* Navbar */
 .app-bar {
-  padding: 8px 16px;
   background-color: #6469e7;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 10px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  justify-content: space-between;
 }
 
 .app-bar .app-bar__menu {
   display: flex;
-  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
 }
 
 .app-bar .app-bar__menu button {
   background-color: transparent;
   border: none;
   font-size: 18px;
-  padding: 8px;
   cursor: pointer;
   min-width: 44px;
   min-height: 44px;
@@ -55,25 +49,22 @@ body {
   user-select: none;
   font-family: Poppins;
   font-weight: bold;
-}
-
-.app-bar .app-bar__brand h1:hover {
-  color: #6096b4;
+  padding: 10px;
 }
 
 .app-bar .app-bar__navigation {
   position: absolute;
   top: 50px;
-  left: -180px;
+  right: -180px;
   width: 150px;
-  transition: all 0.3s;
+  transition: all 0.4s;
   padding: 8px;
   background-color: #93bfcf;
   overflow: hidden;
 }
 
 .app-bar .app-bar__navigation.open {
-  left: 0;
+  right: 0;
 }
 
 .app-bar .app-bar__navigation ul li a {
@@ -92,90 +83,222 @@ body {
 }
 
 /* Jumbotron */
-.jumbotron {
+.jumbotron_isi {
   background-color: #e8eafe;
   background-image: url('../public/image/pinjaman.png');
   background-size: 65% 110px;
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 35px;
+  padding: 50px;
+  padding-top: 60px;
+  margin-top: 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.jumbotron h2 {
-  padding-top: 100px;
+.jumbotron_isi h2 {
+  margin-top: 100px;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.jumbotron button {
+.jumbotron_isi p {
+  text-align: center;
+}
+
+.jumbotron_isi button {
   margin-top: 15px;
-  height: 30px;
-  width: 130px;
-  border-radius: 20px;
+  padding: 10px;
+  border-radius: 5px;
   background-color: #6469e7;
-  border: #6469e7;
   color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-size: 14px;
+}
+
+.jumbotron_isi button:hover {
+  background-color: #4952d8;
+  font-weight: bold;
 }
 
 /* Product */
 .product {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-right: 40px;
+  /* padding: 40px; */
 }
 
 .service-items {
   display: grid;
+  place-items: center;
 }
 
 .product .service-item {
   grid-template-columns: 1fr;
+  background-color: #e8eafe;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 15px;
+  margin-bottom: 15px;
+  width: 70vh;
 }
 
 .product h2 {
   text-align: center;
-  padding-bottom: 30px;
+  margin: 25px 0;
 }
 
-.product h3 {
-  background-color: #e8eafe;
-  text-align: center;
+.product .service-item .image-pinjaman {
+  background-image: url(../public/image/flat.jpg);
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  background-position: -80px, 0;
 }
 
-.product p {
-  padding-top: 15px;
+.product .service-item h3 {
+  font-size: 24px;
+  margin-top: 20px;
 }
 
-.product button {
-  width: 130px;
-  height: 20px;
+.product .service-item p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.product .service-item button {
+  padding: 10px;
   border-radius: 20px;
-  margin-bottom: 40px;
   background-color: #6469e7;
   border: #6469e7;
   color: white;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 /* About Us */
-.about {
+.about-isi {
+  margin-top: 25px;
+}
+
+.about-isi .about-image {
+  background-image: url(../public/image/about.jpg);
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -20px;
+}
+
+.about-isi h3 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 26px;
+}
+
+.about-isi p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* our team */
+.team-isi {
   background-color: #e8eafe;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
+  margin-top: 25px;
+  border: 1px solid black;
 }
 
-.about h2 {
+.team-isi h3 {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  font-size: 26px;
+  padding-top: 15px;
+  margin-bottom: 5px;
 }
 
-.about p {
+.team-isi .team__slogan {
   text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.team-isi .team__items {
+  display: grid;
+  place-items: center;
+}
+
+.team__items .team__item {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  width: 50vh;
+}
+
+.team__items .team__item .team__item__img-fadiya {
+  background-image: url(../public/image/fadiya.jpg);
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
+  background-position-y: -150px;
+  background-size: cover;
+}
+
+.team__items .team__item .team__item__img-wisnu {
+  background-image: url(../public/image/wisnu.jpg);
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
+  background-position-y: -180px;
+  background-size: cover;
+}
+
+.team__items .team__item .team__item__img-ivana {
+  background-image: url(../public/image/ivana.jpg);
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
+  background-position-y: -5px;
+  background-size: cover;
+}
+
+.team__items .team__item .team__item__img-rizky {
+  background-image: url(../public/image/rizky.jpg);
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
+  background-position-y: -130px;
+  background-size: cover;
+}
+
+.team__items .team__item h4 {
+  font-size: 18px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.team__items .team__item p {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-bottom: 20px;
 }
 
 /* Footer */
