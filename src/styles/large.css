@@ -22,19 +22,19 @@
 
   .product .service-items {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
     justify-content: space-around;
   }
 
-  .service-item h3 {
-    text-align: center;
-    width: 90%;
+  .service-item {
+    align-items: center;
   }
 
-  .service-item p {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 12px;
-    text-align: left;
+  .service-item:last-child {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .product .service-item p {
+    text-align: center;
   }
 }

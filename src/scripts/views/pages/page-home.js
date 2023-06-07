@@ -1,11 +1,11 @@
 /* eslint-disable quotes */
-import '../components/jumbtron';
-import '../components/product';
-import '../components/about-static-element';
-import '../components/ourTeam';
+import '../components/landing-page/jumbtron';
+import '../components/landing-page/product';
+import '../components/landing-page/about-static-element';
+import '../components/landing-page/ourTeam';
 import Main from '../components/main-content';
-import HEADER from '../components/navbar';
-import Footer from '../components/footer';
+import HEADER from '../components/landing-page/navbar';
+import Footer from '../components/landing-page/footer';
 
 const HOME = {
   render() {
@@ -20,7 +20,7 @@ const HOME = {
     const createJumbotron = document.createElement('section-jumbotron');
     createJumbotron.classList.add('jumbotron');
     const createProduct = document.createElement('product-service');
-    createProduct.classList.add('service');
+    createProduct.classList.add('product');
     const createAbout = document.createElement('about-us');
     createAbout.classList.add('about');
     const createTeam = document.createElement('our-team');

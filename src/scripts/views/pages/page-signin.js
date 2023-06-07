@@ -1,4 +1,4 @@
-import '../components/signin';
+import '../components/login/signin';
 import Main from '../components/main-content';
 import user from '../../../datas/static-test-data';
 import setDataLogin from '../../data/setSession-Storage';
