@@ -37,4 +37,13 @@
   .product .service-item p {
     text-align: center;
   }
+
+  /* our team */
+  .team__items {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+  }
+
+  /* .team__items .team__item {
+  } */
 }

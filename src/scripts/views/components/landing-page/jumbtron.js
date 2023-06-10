@@ -6,7 +6,8 @@ class JumbotronCreator extends HTMLElement {
 
   render() {
     return (this.innerHTML = `
-    <div class="jumbotron_isi">
+    <div class="jumbotron-isi">
+      <div class="jumbotron-gambar"></div>
       <h2>Get Money No Worry</h2>
       <p>Hitung bunga pinjaman Anda dengan mudah dan cepat! Jangan 
       biarkan masalah perhitungan bunga membebani keuangan Anda, gunakan 
