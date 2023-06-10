@@ -89,46 +89,49 @@ Landing Page
 }
 
 /* Jumbotron */
-.jumbotron_isi {
+.jumbotron-isi {
   background-color: #e8eafe;
-  background-image: url('../public/image/pinjaman.png');
-  background-size: 65% 110px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding: 50px;
-  padding-top: 60px;
-  margin-top: 51px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  padding-bottom: 20px;
 }
 
-.jumbotron_isi h2 {
-  margin-top: 100px;
+.jumbotron-gambar {
+  background-image: url(../public/image/pinjaman.png);
+  width: 71%;
+  height: 25vh;
+  position: relative;
+  top: 11vh;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbotron-isi h2 {
+  margin-top: 80px;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.jumbotron_isi p {
+.jumbotron-isi p {
   text-align: center;
 }
 
-.jumbotron_isi button {
-  margin-top: 15px;
+.jumbotron-isi button {
+  display: flex;
   padding: 10px;
   border-radius: 5px;
   background-color: #6469e7;
   color: white;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.4s;
   font-size: 14px;
+  margin: auto;
+  margin-top: 15px;
 }
 
-.jumbotron_isi button:hover {
+.jumbotron-isi button:hover {
   background-color: #4952d8;
   font-weight: bold;
 }
@@ -252,6 +255,10 @@ Landing Page
 .team-isi .team__items {
   display: grid;
   place-items: center;
+  padding-bottom: 15px;
+  gap: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .team__items .team__item {
@@ -259,47 +266,15 @@ Landing Page
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin-bottom: 10px;
-  width: 50vh;
+  width: 100%;
+  display: block;
 }
 
-.team__items .team__item .team__item__img-fadiya {
-  background-image: url(../public/image/fadiya.jpg);
+.team__item .team__item-image {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   object-fit: cover;
   object-position: center;
-  background-position-y: -150px;
-  background-size: cover;
-}
-
-.team__items .team__item .team__item__img-wisnu {
-  background-image: url(../public/image/wisnu.jpg);
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  object-position: center;
-  background-position-y: -180px;
-  background-size: cover;
-}
-
-.team__items .team__item .team__item__img-ivana {
-  background-image: url(../public/image/ivana.jpg);
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  object-position: center;
-  background-position-y: -5px;
-  background-size: cover;
-}
-
-.team__items .team__item .team__item__img-rizky {
-  background-image: url(../public/image/rizky.jpg);
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  object-position: center;
-  background-position-y: -130px;
-  background-size: cover;
 }
 
 .team__items .team__item h4 {
