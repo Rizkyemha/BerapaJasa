@@ -13,21 +13,21 @@ class ProductAboutUs extends HTMLElement {
                 <article class="team__item">
                     <img class="team__item-image" src="./image/rizky.jpg" alt="" />
                     <div class="team__item__info">
-                        <h4 class="team__item__info__name">M. Rizky Mahendra</h4>
+                        <h4 class="team__item__info__name">M. Rizky M</h4>
                         <p  class="team__item__info__role">Back-End || PM</p>
                     </div>
                 </article>
                 <article class="team__item">
                     <img class="team__item-image" src="./image/fadiya.jpg" alt="" />
                     <div class="team__item__info">
-                        <h4 class="team__item__info__name">Fadiya Qurotun N</h4>
+                        <h4 class="team__item__info__name">Fadiya Qurotun</h4>
                         <p  class="team__item__info__role">Front-End</p>
                     </div>
                 </article>
                 <article class="team__item">
                     <img class="team__item-image" src="./image/wisnu.jpg" alt="" />
                     <div class="team__item__info">
-                        <h4 class="team__item__info__name">Wisnu Arizky k</h4>
+                        <h4 class="team__item__info__name">Wisnu Arizky</h4>
                         <p  class="team__item__info__role">Front-End</p>
                     </div>
                 </article>

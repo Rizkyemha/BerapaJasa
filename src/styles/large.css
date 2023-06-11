@@ -20,28 +20,60 @@
     padding-top: 70px;
   }
 
-  .product .service-items {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
+  .service-items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
   }
 
-  .service-item {
-    align-items: center;
+  .service-items .service-item {
+    flex: 0 0 auto;
+    width: 30%;
+    height: 60vh;
   }
 
-  .service-item:last-child {
-    grid-column: 3/4;
-    grid-row: 1/2;
+  .service-items .service-item:last-child {
+    width: 30%;
   }
 
-  .product .service-item p {
-    text-align: center;
+  /* about us */
+  .about-isi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 53vh;
   }
 
+  .about-isi .about-image {
+    height: 50vh;
+    width: 72vh;
+    background-position: center;
+    margin-top: 25px;
+  }
+
+  .about-isi .about-tulisan {
+    margin-top: 5vh;
+    margin-right: 10px;
+  }
+
+  .about-isi .about-tulisan p {
+    text-align: left;
+  }
   /* our team */
   .team__items {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
+    gap: 10px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .team__items .team__item {
+    width: 30vh;
+  }
+
+  .team__item .team__item-image {
+    height: 30vh;
   }
 
   /* .team__items .team__item {

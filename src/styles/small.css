@@ -1,6 +1,3 @@
-@import './medium.css';
-@import './large.css';
-
 * {
   padding: 0;
   margin: 0;
@@ -17,14 +14,12 @@ Landing Page
 /* Navbar */
 .app-bar {
   background-color: #6469e7;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
   justify-content: space-between;
 }
 
@@ -60,18 +55,35 @@ Landing Page
 
 .app-bar .app-bar__navigation {
   position: absolute;
-  top: 50px;
-  right: -180px;
+  top: 47px;
+  left: -180px;
   width: 150px;
   transition: all 0.4s;
   padding: 8px;
   background-color: #93bfcf;
   overflow: hidden;
+  border-bottom-right-radius: 5px;
 }
 
 .app-bar .app-bar__navigation.open {
-  right: 0;
+  left: 0;
 }
+
+.app-bar .app-bar__user {
+  position: absolute;
+  top: -147px;
+  right: 0;
+  width: 150px;
+  transition: all 0.4s;
+  padding: 8px;
+  background-color: #93bfcf;
+  overflow: hidden;
+  border-bottom-left-radius: 5px;
+}
+
+/* .app-bar .app-bar__user.open {
+  top: 407px;
+} */
 
 .app-bar .app-bar__navigation ul li a {
   display: inline-block;
@@ -84,6 +96,21 @@ Landing Page
 }
 
 .app-bar .app-bar__navigation ul li a:hover {
+  color: #27374d;
+  font-weight: bold;
+}
+
+.app-bar .app-bar__user ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px;
+  margin-bottom: 5px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.app-bar .app-bar__user ul li a:hover {
   color: #27374d;
   font-weight: bold;
 }
@@ -153,7 +180,7 @@ Landing Page
   border-radius: 5px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 20px 15px;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
