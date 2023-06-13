@@ -71,7 +71,7 @@ Landing Page
 
 .app-bar .app-bar__user {
   position: absolute;
-  top: -147px;
+  top: 47px;
   right: 0;
   width: 150px;
   transition: all 0.4s;
@@ -79,6 +79,7 @@ Landing Page
   background-color: #93bfcf;
   overflow: hidden;
   border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 /* .app-bar .app-bar__user.open {
@@ -116,33 +117,35 @@ Landing Page
 }
 
 /* Jumbotron */
-.jumbotron-isi {
+.jumbotron-isi{
   background-color: #e8eafe;
-  flex-direction: column;
-
+  padding-top: 50px;
   padding-bottom: 20px;
 }
-
-.jumbotron-gambar {
-  background-image: url(../public/image/pinjaman.png);
-  width: 71%;
-  height: 25vh;
-  position: relative;
-  top: 11vh;
-  margin: auto;
+.jumbotron-isi .jumbotron-gambar {
+  background-image: url(../public/image/jumbotron1.png);
+  width: 770x;
+  margin-left: -30px;
+  height: 50vh;
   object-fit: cover;
   object-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -20px;
 }
 
 .jumbotron-isi h2 {
-  margin-top: 80px;
-  padding-bottom: 20px;
   text-align: center;
+  margin: 10px 0;
+  font-size: 26px;
 }
 
 .jumbotron-isi p {
   text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .jumbotron-isi button {
@@ -150,6 +153,8 @@ Landing Page
   padding: 10px;
   border-radius: 5px;
   background-color: #6469e7;
+  border: #6469e7;
+  border-radius: 15px;
   color: white;
   cursor: pointer;
   transition: 0.4s;
@@ -160,12 +165,16 @@ Landing Page
 
 .jumbotron-isi button:hover {
   background-color: #4952d8;
+  border: #4952d8;
   font-weight: bold;
 }
 
+
+/* product */
 .product {
   display: block;
   margin: 0px 2.5%;
+  margin-top: 70px;
 }
 
 .service-items {
@@ -194,7 +203,7 @@ Landing Page
 }
 
 .product .service-item .image-pinjaman {
-  background-image: url(../public/image/flat.jpg);
+  background-image: url(../public/image/budget.png);
   width: 25vh;
   height: 25vh;
   border-radius: 50%;
@@ -203,8 +212,13 @@ Landing Page
   background-position: -80px, 0;
 }
 
+.service-item .image-pinjaman{
+  margin: auto;
+}
+
 .product .service-item h3 {
   font-size: 24px;
+  text-align: center;
 }
 
 .product .service-item p {
@@ -215,10 +229,12 @@ Landing Page
   overflow: hidden;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  text-align: center;
 }
 
 .product .service-item .button_container {
   padding-top: 2.5%;
+  text-align: center;
 }
 
 .product .service-item .button_container button {
@@ -232,13 +248,18 @@ Landing Page
 
 /* About Us */
 .about-isi {
-  margin-top: 25px;
+  margin-top: 70px;
 }
 
 .about-isi .about-image {
-  background-image: url(../public/image/about.jpg);
+  background-image: url(../public/image/abouttt.png);
   width: 100%;
   height: 45vh;
+  margin-top: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-left: -8px;
+  margin-right: 15px;
   object-fit: cover;
   object-position: center;
   background-repeat: no-repeat;
@@ -256,19 +277,26 @@ Landing Page
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* our team */
 .team-isi {
   background-color: #e8eafe;
-  margin-top: 25px;
+  margin-top: 70px;
 }
 
 .team-isi h3 {
   text-align: center;
   font-size: 26px;
-  padding-top: 15px;
-  margin-bottom: 5px;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+
+.team-isi p{
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 .team-isi .team__slogan {
@@ -283,7 +311,7 @@ Landing Page
   display: grid;
   place-items: center;
   padding-bottom: 15px;
-  gap: 30px;
+  gap: 15px;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -295,6 +323,7 @@ Landing Page
   margin-bottom: 10px;
   width: 40vh;
   display: block;
+  text-align: center;
 }
 
 .team__item .team__item-image {
@@ -378,6 +407,7 @@ a:hover {
   display: flex;
   justify-content: center;
   margin-top: 0px;
+  text-align: center;
 }
 
 /* 
