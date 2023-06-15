@@ -55,14 +55,18 @@ Landing Page
 
 .app-bar .app-bar__navigation {
   position: absolute;
-  top: 47px;
+  top: 48px;
   left: -180px;
   width: 150px;
   transition: all 0.4s;
   padding: 8px;
-  background-color: #93bfcf;
+  background-color: #6469e7;
   overflow: hidden;
   border-bottom-right-radius: 5px;
+}
+
+nav#navigationDrawer {
+  text-align: center;
 }
 
 .app-bar .app-bar__navigation.open {
@@ -71,12 +75,12 @@ Landing Page
 
 .app-bar .app-bar__user {
   position: absolute;
-  top: 47px;
+  top: -148px;
   right: 0;
   width: 150px;
   transition: all 0.4s;
   padding: 8px;
-  background-color: #93bfcf;
+  background-color: #6469e7;
   overflow: hidden;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -202,18 +206,49 @@ Landing Page
   margin: 25px 0;
 }
 
-.product .service-item .image-pinjaman {
-  background-image: url(../public/image/budget.png);
+.product .service-item .image-pinjaman-1 {
+  background-image: url(../public/image/accounting.png);
   width: 25vh;
   height: 25vh;
-  border-radius: 50%;
+  border-radius: 0%;
   object-fit: cover;
   object-position: center;
-  background-position: -80px, 0;
+  background-repeat: no-repeat;
+  background-position: -0px, 0;
 }
 
-.service-item .image-pinjaman{
-  margin: auto;
+.product .service-item .image-pinjaman-2 {
+  background-image: url(../public/image/audit.png);
+  width: 25vh;
+  height: 25vh;
+  border-radius: 0%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-position: -0px, 0;
+}
+
+.product .service-item .image-pinjaman-3 {
+  background-image: url(../public/image/pos-terminal.png);
+  width: 25vh;
+  height: 25vh;
+  border-radius: 0%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-position: -0px, 0;
+}
+
+.service-item .image-pinjaman-1{
+  margin-left: 50px;
+}
+
+.service-item .image-pinjaman-2{
+  margin-left: 40px;
+}
+
+.service-item .image-pinjaman-3{
+  margin-left: 40px;
 }
 
 .product .service-item h3 {
@@ -285,6 +320,7 @@ Landing Page
 .team-isi {
   background-color: #e8eafe;
   margin-top: 70px;
+  padding-bottom: 50px;
 }
 
 .team-isi h3 {
@@ -347,68 +383,62 @@ Landing Page
 }
 
 /* Footer */
-footer {
+.footer-isi {
+  padding-bottom: 10px;
   background-color: #6469e7;
-  color: #bbb;
-  line-height: 1.5;
+  height: 85vh;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+.footer-isi .footer-image {
+  background-image: url(../public/image/Logo\ BerapaJasa.png);
+  width: 100%;
+  height: 50vh;
+  margin-top: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-left: -3px;
+  margin-right: 15px;
+  padding-bottom: 15px;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -20px;
 }
 
-footer a {
+.footer-tulisan{
+  padding-top: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-tulisan ul li{
+  padding: 5px;
+}
+
+.footer-tulisan ul li a {
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 15px;
   text-decoration: none;
-  color: #eee;
 }
 
-a:hover {
-  text-decoration: underline;
+.watermark{
+  background-color: #6469e7;
+  height: 70px;
 }
 
-.ft-title {
-  color: #fff;
-  font-family: 'Merriweather', serif;
-  font-size: 1.375rem;
-  padding-bottom: 0.625rem;
-}
-
-.container {
-  flex: 1;
-}
-
-.ft-sosmed {
-  padding: 0 1.875rem 1.25rem;
-}
-
-.ft-sosmed p {
+.watermark p{
+  border-top: 2px solid grey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   color: white;
 }
 
-.ft-sosmed-list {
-  display: flex;
-  justify-content: center;
-  border-top: 1px white solid;
-  padding-top: 1.25rem;
-}
-
-.ft-sosmed-list li {
-  margin: 0.5rem;
-  font-size: 1.25rem;
-  min-width: 44px;
-  min-height: 44px;
-  font-size: 44px;
-}
-
-.watermark {
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  text-align: center;
-}
 
 /* 
 Akhir Landing Page

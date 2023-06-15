@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
   .jumbotron-isi {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,6 +32,18 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: center;
+  }
+
+  .service-item .image-pinjaman-1{
+    margin-left: 70px;
+  }
+  
+  .service-item .image-pinjaman-2{
+    margin-left: 60px;
+  }
+  
+  .service-item .image-pinjaman-3{
+    margin-left: 60px;
   }
 
   .service-items .service-item {
@@ -91,6 +103,20 @@
     height: 30vh;
   }
 
-  /* .team__items .team__item {
-  } */
+  /* Footer */
+  .footer-isi{
+    padding-left: 180px;
+    padding-top: 30px;
+    padding-right: 80px;
+  }
+
+  .footer-isi .footer-image{
+    padding-right: 70px;
+  }
+
+  .footer-tulisan ul li{
+    margin-top: 5px;
+    font-size: 18px;
+    padding-right: 155px;
+  }
 }

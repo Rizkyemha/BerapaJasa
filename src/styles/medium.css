@@ -22,6 +22,18 @@
     width: 40%;
   }
 
+  .service-item .image-pinjaman-1{
+    margin-left: 10px;
+  }
+  
+  .service-item .image-pinjaman-2{
+    margin-left: 10px;
+  }
+  
+  .service-item .image-pinjaman-3{
+    margin-left: 10px;
+  }
+
   /* about us */
   .about-isi .about-image {
     width: 100%;
@@ -44,5 +56,37 @@
 
   .team__items .team__item {
     width: 40vh;
+  }
+
+  /* Footer*/
+  .footer-isi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+
+  .footer-isi .footer-image {
+    height: 35vh;
+    width: 50vh;
+    background-position: center;
+    margin-top: 25px;
+  }
+
+  .footer-isi .footer-tulisan {
+    margin-top: 9vh;
+    padding-right: 40px;
+  }
+
+  .footer-tulisan ul li{
+    padding: 5px;
+    list-style-type: none;
+  }
+
+  .footer-tulisan ul li a {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 15px;
+    text-decoration: none;
   }
 }
