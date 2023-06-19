@@ -32,7 +32,7 @@
                   </div>
                 </div>
               </div>
-              <!-- tutup row dibawah -->
+              <!-- tutup row dibawah -->                     
             </div>
             <!-- Tutup Isi -->
           </div>

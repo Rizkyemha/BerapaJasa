@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-// const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -25,6 +26,30 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(scss)$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: () => [
+                  autoprefixer,
+                ],
+              },
+            },
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -40,11 +65,10 @@ module.exports = {
         },
       ],
     }),
-    /* new WorkboxWebpackPlugin.GenerateSW({
+    new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',
       skipWaiting: true,
       clientsClaim: true,
     }),
-    */
   ],
 };

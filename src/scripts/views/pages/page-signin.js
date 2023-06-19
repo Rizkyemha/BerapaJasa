@@ -1,22 +1,21 @@
 /* eslint-disable consistent-return */
 import '../components/login/signin';
-import Main from '../components/main-content';
 import getDataLogin from '../../data/getSession-Storage';
 import BerapaJasaDBSource from '../../data/berapajasa-api';
 
 const SIGNIN = {
   async render() {
-    // this._userExistonSession();
     return `
       `;
   },
 
   async afterRender() {
     const getIdP = document.querySelector('body');
-    getIdP.innerHTML = Main.render();
-    const main = document.querySelector('#mainContent');
+    getIdP.innerHTML = '';
     const signin = document.createElement('signin-section');
-    main.append(signin);
+    signin.classList.add('bg-gradient-primary');
+    getIdP.append(signin);
+    this._userExistonSession();
   },
 
   async _userExistonSession() {
@@ -26,13 +25,13 @@ const SIGNIN = {
     }
     const userDb = await BerapaJasaDBSource.login({
       username: user.username,
-      password: 123, // static
+      password: user.password,
     });
     if (userDb == null) {
       return;
     }
     if (user.username === userDb.username && user.password === userDb.password) {
-      window.location.hash = '/profile';
+      window.location.hash = `/profile/${user.id}`;
     }
   },
 };

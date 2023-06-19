@@ -12,7 +12,7 @@ const HEADER = {
               <li><a href="#/coba">About</a></li>
               <li><a href="#/coba">Team's</a></li>
               <li><a href="#/coba">Contact</a></li>
-              <li><a href="#/profile">Profile</a></li>
+              <li><a href="#/signin">Profile</a></li>
             </ul>
         </nav>
       <div class="app-bar__brand">

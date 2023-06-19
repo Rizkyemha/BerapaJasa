@@ -6,7 +6,7 @@ import BerapaJasaDBSource from '../../data/berapajasa-api';
 
 const SIGNUP = {
   async render() {
-    // this._userExistonSession();
+    this._userExistonSession();
     return `
       <p id="render">berhasil coba</p>
       <a href="/">kembali</a>
@@ -17,6 +17,7 @@ const SIGNUP = {
     const getIdP = document.querySelector('body');
     getIdP.innerHTML = '';
     const signup = document.createElement('signup-section');
+    signup.classList.add('bg-gradient-primary');
     getIdP.append(signup);
   },
 
@@ -27,13 +28,13 @@ const SIGNUP = {
     }
     const userDb = await BerapaJasaDBSource.login({
       username: user.username,
-      password: 123, // belum di set
+      password: user.password,
     });
     if (userDb == null) {
       return;
     }
     if (user.username === userDb.username && user.password === userDb.password) {
-      window.location.hash = '/profile';
+      window.location.hash = `/profile/${user.id}`;
     }
   },
 };
