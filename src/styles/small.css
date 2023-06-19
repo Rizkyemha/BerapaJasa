@@ -390,13 +390,12 @@ nav#navigationDrawer {
 }
 
 .footer-isi .footer-image {
-  background-image: url(../public/image/Logo\ BerapaJasa.png);
-  width: 100%;
-  height: 50vh;
+  background-image: url(../public/image/Logo\ New\ BerapaJasa.png);
+  width: 80%;
+  height: 40vh;
   margin-top: 18px;
-  margin-left: 5px;
+  margin-left: 33px;
   margin-right: 5px;
-  margin-left: -3px;
   margin-right: 15px;
   padding-bottom: 15px;
   object-fit: cover;
