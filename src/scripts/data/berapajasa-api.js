@@ -14,6 +14,22 @@ class BerapaJasaDBSource {
       body: await JSON.stringify(requestBody),
     });
     const responseJson = await response.json();
+    console.log(responseJson);
+    return responseJson.user;
+  }
+
+  static async register_pinjaman(requestBody) {
+    if (!requestBody) {
+      return null;
+    }
+    const response = await fetch(API_ENDPOINT.registrasi_pinjaman, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: await JSON.stringify(requestBody),
+    });
+    const responseJson = await response.json();
     return responseJson.data;
   }
 
@@ -30,6 +46,14 @@ class BerapaJasaDBSource {
     });
     const responseJson = await response.json();
     return responseJson.user;
+  }
+
+  static async getloans(queryParam1, queryParam2) {
+    const response = await fetch(API_ENDPOINT.getloans(queryParam1, queryParam2), {
+      method: 'GET',
+    });
+    const responseJson = await response.json();
+    return responseJson.loan;
   }
 }
 

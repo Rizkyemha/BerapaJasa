@@ -4,8 +4,10 @@ const DrawerInit = {
       return;
     }
 
-    button.addEventListener('click', (event) => {
-      this._toggleDrawer(event, drawer);
+    button.forEach((bt) => {
+      bt.addEventListener('click', (event) => {
+        this._toggleDrawer(event, drawer);
+      });
     });
 
     content.addEventListener('click', (event) => {

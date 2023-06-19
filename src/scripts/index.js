@@ -4,10 +4,12 @@ import 'regenerator-runtime';
 import '../styles/small.css';
 import '../styles/medium.css';
 import '../styles/large.css';
+import '../scss/styles.scss';
+import * as bootstrap from 'bootstrap';
+import '../styles/sb-admin-2.min.css';
+import swRegister from './utils/sw-register';
 
 import App from './views/app';
-
-console.log('bundler jalan h3h3');
 
 const app = new App({
   content: document.querySelector('body'),
@@ -19,4 +21,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });
